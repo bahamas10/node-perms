@@ -22,7 +22,6 @@ function toString(s) {
   // Create an object representing the permissions
   var r = [];
   fields.forEach(function(field, place) {
-    var key;
     switch (place) {
       case 0: case 1: case 2:
         r.push(X & +field ? 'x' : '-');
