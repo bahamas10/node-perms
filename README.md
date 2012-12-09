@@ -3,19 +3,28 @@ perms
 
 Convert Unix style permissions to strings like ls (0755 => 'rwxr-xr-x')
 
-Examples
---------
+Usage
+-----
 
-Given
+Node.js
 
 ``` js
-var perms = require('perms')
+var Perms = require('perms');
 ```
+
+Web
+
+``` html
+<script src="perms.min.js"></script>
+```
+
+Examples
+--------
 
 Convert a mode to a human-readable string like ls(1) generates
 
 ``` js
-var p = perms.toString('0755');
+var p = Perms.toString('0755');
 console.log(p);
 ```
 
@@ -28,7 +37,7 @@ rwxr-xr-x
 Also handles special permissions
 
 ``` js
-var p = perms.toString('6660');
+var p = Perms.toString('6660');
 console.log(p);
 ```
 
@@ -41,7 +50,7 @@ rwSrwS---
 Go backwards as well!
 
 ``` js
-var mode = perms.toMode('rwxr-xr-t');
+var mode = Perms.toMode('rwxr-xr-t');
 console.log(mode);
 ```
 
@@ -54,13 +63,6 @@ yields
 *NOTE*: This module makes it super tempting to parse ls(1)... don't do that!
 
 http://mywiki.wooledge.org/ParsingLs
-
-Usage
------
-
-``` js
-var perms = require('perms');
-```
 
 Functions
 ---------
