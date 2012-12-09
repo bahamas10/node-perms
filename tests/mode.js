@@ -1,14 +1,14 @@
-var perms = require('../'),
-    assert = require('assert'),
-    ex = {
-      '0755': 'rwxr-xr-x',
-      '0444': 'r--r--r--',
-      '0700': 'rwx------',
-      '6660': 'rwSrwS---',
-      '1755': 'rwxr-xr-t',
-      '7777': 'rwsrwsrwt',
-      '6777': 'rwsrwsrwx'
-    };
+var perms = require('../');
+var assert = require('assert');
+var ex = {
+  '0755': 'rwxr-xr-x',
+  '0444': 'r--r--r--',
+  '0700': 'rwx------',
+  '6660': 'rwSrwS---',
+  '1755': 'rwxr-xr-t',
+  '7777': 'rwsrwsrwt',
+  '6777': 'rwsrwsrwx'
+};
 
 Object.keys(ex).forEach(function(s) {
   var p = perms.toString(s);
