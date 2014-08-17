@@ -1,9 +1,10 @@
 {
   "name": "perms",
   "description": "Convert Unix style permissions to strings like ls (0755 => 'rwxr-xr-x')",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Dave Eddy <dave@daveeddy.com> (http://www.daveeddy.com)",
   "contributors": [],
+  "main": "./perms.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/bahamas10/node-perms.git"

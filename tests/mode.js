@@ -11,7 +11,7 @@ var ex = {
 };
 
 Object.keys(ex).forEach(function(s) {
-  var p = perms.toString(s);
+  var p = perms.toString(parseInt(s, 8));
   console.log('given: %s', s);
   console.log('toString(): %s', p);
   console.log('should be:  %s\n', ex[s]);

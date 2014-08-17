@@ -21,10 +21,10 @@ Web
 Examples
 --------
 
-Convert a mode to a human-readable string like ls(1) generates
+Convert a mode to a human-readable string like `ls(1)` generates
 
 ``` js
-var p = Perms.toString('0755');
+var p = Perms.toString(0755);
 console.log(p);
 ```
 
@@ -37,7 +37,7 @@ rwxr-xr-x
 Also handles special permissions
 
 ``` js
-var p = Perms.toString('6660');
+var p = Perms.toString(6660);
 console.log(p);
 ```
 
@@ -73,7 +73,7 @@ Given a string, return the mode suitable for passing to `fs.chmod`
 
 ### toString(s)
 
-Given a mode, return a string suitable for printing to a user
+Given a mode (as an int), return a string suitable for printing to a user
 
 Installation
 ------------
